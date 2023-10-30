@@ -1,9 +1,9 @@
 import { Grid } from '@mui/material';
-import Node from '@/assets/images/img-icons/img-nodejs.png';
+import MySQL from '@/assets/images/img-icons/img-mysql.png';
 import Image from 'next/image';
 
 
-export const IconNode = () => {
+export const IconMySQL = () => {
   return (
     <Grid
       item
@@ -13,9 +13,9 @@ export const IconNode = () => {
       justifyContent={'initial'}
     >
       <Image
-        src={Node}
+        src={MySQL}
         style={{ width: '38px', height: '38px' }}
-        alt="icone-node" />
+        alt="icone-mysql" />
     </Grid>
   );
 };

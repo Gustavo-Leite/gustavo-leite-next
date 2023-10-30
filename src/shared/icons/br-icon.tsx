@@ -15,7 +15,7 @@ export const IconBr = () => {
     >
       <Image
         src={Br}
-        alt={'br-icon'} />
+        alt={'icone-brasil'} />
       <Typography
         variant={'body2'}
         color={'primary.contrastText'}

@@ -1,5 +1,5 @@
 import { Grid } from '@mui/material';
-import React from '@/assets/images/react-icon.png';
+import React from '@/assets/images/img-icons/img-react.png';
 import Image from 'next/image';
 
 
@@ -14,7 +14,8 @@ export const IconReact = () => {
     >
       <Image
         src={React}
-        alt="react-icon" />
+        style={{ width: '38px', height: '38px' }}
+        alt="icone-react" />
     </Grid>
   );
 };

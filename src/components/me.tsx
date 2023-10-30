@@ -30,7 +30,7 @@ export const Me = () => {
     <Grid
       container
       xs={12}
-      sm={6}
+      md={6}
       gap={2}
       flexDirection={'column'}
       justifyContent={'center'}
@@ -91,18 +91,19 @@ export const Me = () => {
               variant={'body1'}
               color={'#8CC8FF'}
             >
-              {'Hi, i\'m Gustavo! 😁'}
+              {'Olá, eu sou o Gustavo! 😁'}
             </Typography>
             <Typography
               variant={'body2'}
               textTransform={'capitalize'}
               color={'primary.contrastText'}
             >
-              Software Developer
+              Desenvolvedor de Software
             </Typography>
           </Grid>
         </Grid>
       )}
+
       {smDown && (
         <Grid
           container
@@ -117,24 +118,27 @@ export const Me = () => {
               variant={'body2'}
               color={'primary.contrastText'}
             >
-              {'I am looking for an opportunity to work with software development. The focus of my studies currently has been on the Javascript ecosystem. I\'ve been digging into the frontend with React and Angular coding with javascript and typescript. For backend, I have gained experience with Nodejs via express and Nestjs.'}
+              {'Estou procurando uma oportunidade para trabalhar com desenvolvimento de programas. O foco dos meus estudos atualmente tem sido o ecossistema Javascript. Tenho me aprofundado no frontend com codificação React e Angular com javascript e typescript. Para backend, ganhei experiência com Nodejs via express e Nestjs.'}
             </Typography>
           </Grid>
         </Grid>
       )}
+
       {smUp && (
         <Grid
           container
           flexDirection={'row'}
           justifyContent={'center'}
-          alignItems={'end'}
+          alignItems={'center'}
           gap={2}
         >
           <Grid
             item
             display={'flex'}
+            flexDirection={'column'}
             justifyContent={'center'}
             alignItems={'center'}
+            gap={2}
             mb={'1rem'}
           >
             <Image
@@ -158,18 +162,19 @@ export const Me = () => {
               variant={'body1'}
               color={'#8CC8FF'}
             >
-              {'Hi, i\'m Gustavo! 😁'}
+              {'Olá, eu sou o Gustavo! 😁'}
             </Typography>
             <Typography
               variant={'body2'}
               textTransform={'capitalize'}
               color={'primary.contrastText'}
             >
-              Software Developer
+            Desenvolvedor de Software
             </Typography>
           </Grid>
         </Grid>
       )}
+
       {smUp && (
         <Grid
           container
@@ -178,17 +183,18 @@ export const Me = () => {
           <Grid
             item
             display={'flex'}
-            width={'26rem'}
+            width={'24rem'}
           >
             <Typography
               variant={'body2'}
               color={'primary.contrastText'}
             >
-              {'Im looking for an opportunity to work with program development. The focus of my studies currently has been on the Javascript ecosystem. I\'ve been digging deeper into the frontend with React and Angular coding with javascript and typescript. For backend, I gained experience with Nodejs via express and Nestjs.'}
+              {'Estou procurando uma oportunidade para trabalhar com desenvolvimento de programas. O foco dos meus estudos atualmente tem sido o ecossistema Javascript. Tenho me aprofundado no frontend com codificação React e Angular com javascript e typescript. Para backend, ganhei experiência com Nodejs via express e Nestjs.'}
             </Typography>
           </Grid>
         </Grid>
       )}
+      
     </Grid>
   );
 };

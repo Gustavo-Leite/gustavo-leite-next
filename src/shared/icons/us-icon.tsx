@@ -15,7 +15,7 @@ export const IconUs = () => {
     >
       <Image
         src={Us}
-        alt={'us-icon'} />
+        alt={'icone-us'} />
       <Typography
         variant={'body2'}
         color={'primary.contrastText'}

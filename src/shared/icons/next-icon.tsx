@@ -1,5 +1,5 @@
 import { Grid } from '@mui/material';
-import Next from '@/assets/images/next-icon.png';
+import Next from '@/assets/images/img-icons/img-nextjs.png';
 import Image from 'next/image';
 
 
@@ -14,7 +14,8 @@ export const IconNext = () => {
     >
       <Image
         src={Next}
-        alt="next-icon" />
+        style={{ width: '38px', height: '38px' }}
+        alt="icone-next" />
     </Grid>
   );
 };

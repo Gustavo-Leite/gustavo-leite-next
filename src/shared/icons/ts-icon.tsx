@@ -1,5 +1,5 @@
 import { Grid } from '@mui/material';
-import Ts from '@/assets/images/ts-icon.png';
+import Ts from '@/assets/images/img-icons/img-typescript.png';
 import Image from 'next/image';
 
 
@@ -14,7 +14,8 @@ export const IconTs = () => {
     >
       <Image
         src={Ts}
-        alt="ts-icon" />
+        style={{ width: '38px', height: '38px' }}
+        alt="icone-typescript" />
     </Grid>
   );
 };
