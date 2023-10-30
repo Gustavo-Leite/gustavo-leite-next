@@ -8,8 +8,10 @@ import {
 import { Theme } from '@/shared/themes';
 
 import { 
+  HardSkill,
   Me, 
-  Skills 
+  Skills,
+  Footer
 } from '@/components';
 
 export default function Home() {
@@ -28,7 +30,13 @@ export default function Home() {
 
         <Skills />
 
+        
       </Grid>
+
+      <HardSkill />
+
+      <Footer />
+      
     </ThemeProvider>
   );
 }

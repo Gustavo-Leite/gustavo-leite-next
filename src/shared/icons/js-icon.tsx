@@ -1,5 +1,5 @@
 import { Grid } from '@mui/material';
-import Js from '@/assets/images/js-icon.png';
+import Js from '@/assets/images/img-icons/img-javascript.png';
 import Image from 'next/image';
 
 
@@ -14,7 +14,8 @@ export const IconJs = () => {
     >
       <Image
         src={Js}
-        alt="js-icon" />
+        style={{ width: '38px', height: '38px' }}
+        alt="icone-javascript" />
     </Grid>
   );
 };

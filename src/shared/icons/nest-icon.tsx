@@ -1,5 +1,5 @@
 import { Grid } from '@mui/material';
-import Nest from '@/assets/images/nest-icon.png';
+import Nest from '@/assets/images/img-icons/img-nestjs.png';
 import Image from 'next/image';
 
 
@@ -14,7 +14,8 @@ export const IconNest = () => {
     >
       <Image
         src={Nest}
-        alt="nest-icon" />
+        style={{ width: '38px', height: '38px' }}
+        alt="icone-nest" />
     </Grid>
   );
 };

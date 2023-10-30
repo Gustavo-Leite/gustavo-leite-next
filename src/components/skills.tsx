@@ -3,7 +3,8 @@ import {
   Button,
   Typography,
   useMediaQuery,
-  Theme
+  Theme,
+  useTheme
 } from '@mui/material';
 
 import styled from 'styled-components';
@@ -27,13 +28,16 @@ const StyledButton = styled(Button)`
 
 
 export const Skills = () => {
+  const theme = useTheme();
+
+
   const smDown = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
   const smUp = useMediaQuery((theme: Theme) => theme.breakpoints.up('sm'));
   return (
     <Grid
       container
       xs={12}
-      sm={6}
+      md={5}
       flexDirection={'column'}
       justifyContent={'center'}
       alignContent={'center'}
@@ -111,6 +115,7 @@ export const Skills = () => {
           width={'100%'}
           flexDirection={'column'}
           justifyContent={'center'}
+          alignContent={'center'}
           padding={'1rem'}
         >
           <Grid
@@ -143,6 +148,7 @@ export const Skills = () => {
           width={'100%'}
           flexDirection={'column'}
           justifyContent={'center'}
+          alignContent={'center'}
           padding={'1rem'}
           gap={1}
         >
@@ -161,7 +167,7 @@ export const Skills = () => {
           <Grid
             item
             display={'flex'}
-            flexDirection={'column'}
+            flexDirection={'row'}
             gap={1}
           >
             <IconBr />
@@ -173,39 +179,27 @@ export const Skills = () => {
       {smUp && (
         <Grid
           container
-          width={'100%'}
-          height={'20%'}
-          flexDirection={'column'}
+          flexDirection={'row'}
           justifyContent={'center'}
-          padding={'1rem'}
-          gap={1}
+          height={theme.spacing(15)}
         >
-          <Grid
-            item
-            ml={5}
-          >
+          <Grid item display={'flex'} flexDirection={'column'} gap={2} mt={3} xs={12}>
             <Typography
-              variant={'body2'}
-              color={'#8CC8FF'}
+              variant={'body1'}
+              textAlign={'center'}
               textTransform={'capitalize'}
+              color={'#8CC8FF'}
             >
               Contacts
             </Typography>
           </Grid>
-          <Grid
-            item
-            display={'flex'}
-            flexDirection={'column'}
-            ml={5}
-          >
-            <Grid
-              item
-              display={'flex'}
-              gap={1}
-            >
+          <Grid item display={'flex'} flexDirection={'row'} justifyContent={'center'} gap={2} xs={12}>
+            <Grid item display={'flex'} flexDirection={'row'} justifyContent={'center'} xs={1} height={'45px'} >
               <StyledButton href='https://www.linkedin.com/in/gustavo-martins-leite-295885207/'>
                 <LinkedIn fontSize='large' style={{ color: '#0B65C3' }} />
               </StyledButton>
+            </Grid>
+            <Grid item display={'flex'} flexDirection={'row'} justifyContent={'center'} xs={1} height={'45px'} >
               <StyledButton href='https://github.com/Gustavo-Leite'>
                 <GitHub fontSize='large' />
               </StyledButton>
