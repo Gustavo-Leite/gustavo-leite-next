@@ -7,11 +7,12 @@ import {
 
 import { Theme } from '@/shared/themes';
 
-import { 
+import {
   HardSkill,
-  Me, 
+  Me,
   Skills,
-  Footer
+  Footer,
+  Popup
 } from '@/components';
 
 export default function Home() {
@@ -25,18 +26,20 @@ export default function Home() {
           minHeight: '100vh',
         }}
       >
+        <Popup />
 
         <Me />
 
         <Skills />
 
-        
+
+
       </Grid>
 
       <HardSkill />
 
       <Footer />
-      
+
     </ThemeProvider>
   );
 }
